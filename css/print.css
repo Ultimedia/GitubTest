@@ -1,0 +1,148 @@
+/*
+ * Viewpoints
+ */
+/* master styles
+ --------------------------------------------- */
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+    min-width: 1100px;
+	background: #f1f2f2;
+}
+
+#header, button{
+	display: none;
+}
+
+#wrapper{
+	margin: 0;
+	padding: 0;
+}
+
+
+/* Print page
+ --------------------------------------------- */
+#printPage{
+	display: none;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	background: #fff;
+	padding: 20px 20px 20px 20px;
+}
+
+#printPageInfo label{
+	font-size: 1.5em;
+}
+
+#printPageHeader h1{
+	font-size: 3em;
+	font-weight: bold;
+	padding: 0px 0 20px 0;
+}
+
+#printButton{
+	padding: 10px;
+}
+
+#printPageHeader #leftheader{
+	width: 80%;
+	float: left;
+	display: inline-block;
+}
+
+#printPageHeader #rightHeader{
+	text-align: right;
+	width: 20%;
+	float: left;
+}
+
+#printPageInfo li{
+	padding: 5px 0 5px 0;
+}
+
+#printPage textarea{
+	width: 98%;
+	border: solid 1px #c0c0c0;
+	resize: none;
+	height: 100px;
+	padding: 4px;
+	font-size: 1.1em;
+}
+
+#printPage printPageHeader{
+	background-color: #3F3F3F;
+}
+
+spacer{
+	padding: 20px;
+}
+
+hr{
+	clear: both;
+	height: 1px;
+	background: #c0c0c0;
+	border: 0;
+	margin: 20px 0 20px 0;
+}
+
+.printPreview{
+	margin: 0px 0px 30px 0;
+	background: #e7eaef;
+}
+
+.printContent{
+	padding: 20px;
+	border: solid 1px #c0c0c0;
+	margin-bottom: 20px;
+}
+
+.printPreview h2{
+	font-size: 1.6em;
+	padding: 0 0 10px 0;
+	margin-top: 0;
+}
+
+.printPreview h3{
+	font-size: 1.3em;
+	padding: 10px 0 10px 0;
+}
+
+.printPreview h4{
+	margin-bottom:5px;
+	padding: 0;
+}
+
+.printPreview ol{
+	font-size: 1.1em;
+  	color: #000000;
+	list-style-type: decimal;
+	margin: 5px 0 0 30px;
+}
+
+.printPreview ol li{
+	font-size: 1.1em;
+	padding: 8px 0 5px 0;
+	font-weight: bold;
+}
+
+.printPreview ul li{
+	font-size: 0.9em;
+	font-weight: normal;
+	list-style-type: disc;
+	padding: 0px 20px 0 5px;
+	margin: 20px 0 20px 10px;
+	line-height: 1.1em;
+}
+
+.printPreview ul{
+	margin: 10px 10px 10px 0px;
+}
+
+#printList{
+	width: 100%;
+}
+
+#printList label{
+	display: none;
+}

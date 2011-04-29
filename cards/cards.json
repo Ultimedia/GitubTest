@@ -1,0 +1,173 @@
+{"cards":[
+		{"category_id": "1", 
+		 "card_id": "1", 
+		 "title": "Inform and shape your teaching",
+		 "info": "Provide information to teachers that can be used to help shape the teaching.",
+		 "icon": "icon1.png",
+		 "background": "#5c3a7f",
+		 "checkitems": [
+				{"checked": "false", "item": "Request feedback from one-minute papers where learners carry out a small assessment taks and hand it anonymously at the end of a class. Use the information from these to inform teaching in the next class."},
+				{"checked": "false", "item": "Have students request the feedback they would like when they make an assignment submission."},
+				{"checked": "false", "item": "Provide opportunities for frequent low-stakes assessment tasks awith regular outputs to help you gauge progress."},
+				{"checked": "false", "item": "Deliver online multiple-choice tests before a class. Analyse and use the information gathered from these to determine what is taught in class."},
+				{"checked": "false", "item": "Use online tools with built-in functionality for individual recording and rporting- providing information about levels of learner engagement with resources, online tests and discussions."},
+				{"checked": "false", "item": "Use learner response systems to privde dynamic feedback in class. The stored data provides information about responses, which could be analysed."},
+				{"checked": "false", "item": "Provide opportunities for learners to self-assess and reflect on their learning. A record of these reflections provides information about the learners ability to evaluate their own learning."},
+				{"checked": "false", "item": "Request feedback from learners on their assessment experiences in order to make improvements."},
+				{"checked": "false", "item": "Carry out a brief survey mid-term or mid semester while there is time to adress major concerns."}
+			]
+		},
+
+		{"category_id": "1", 
+		 "card_id": "2", 
+		 "title": "Encourage positive motivantional beliefs",
+		 "info": "Encourage positive motivational beliefs and self-esteem.",
+		 "icon": "icon1.png",
+		 "background": "#3fa153",
+		 "checkitems": [
+				{"checked": "false", "item": "Structure learning tasks so that they have a progressive level of difficulty."},
+				{"checked": "false", "item": "Align learning tasks so that learners have opportunities to practice skills before work is markerd (summatively assessed)."},
+				{"checked": "false", "item": "Encourage a climate of mutual respect and accountability."},
+				{"checked": "false", "item": "Provide objective tests where learners individually assess their understanding and make comparisons against their own learning goals, rather than against the performance of other learners."},
+				{"checked": "false", "item": "Use real-life scenarios and dynamic feedback."},
+				{"checked": "false", "item": "Avoid relesearing marks on written work until after learners have responded to feedback comments."},
+				{"checked": "false", "item": "Redesign and align formative and summative assessments to enhance learner skills and independence."},
+				{"checked": "false", "item": "Adjust assessment to develop learners'responsibility for their learning."},
+				{"checked": "false", "item": "Give learners opportunities to select the topics for extended essays or project work."},
+				{"checked": "false", "item": "Provide learners in decision-making about assessment policy and practice."},
+				{"checked": "false", "item": "Encourage the information of supportive learning environmnets."},
+				{"checked": "false", "item": "Have learner representation on commitees that discuss policies and practices."}
+			]
+		},
+
+		{"category_id": "1", 
+		 "card_id": "3", 
+		 "title": "Develop self-assessment and reflection",
+		 "info": "Facilitate the development of self-assessment and reflection in learning.",
+		 "icon": "icon1.png",
+		 "background": "#27477e",
+		  "checkitems": [
+				{"checked": "false", "item": "Create a series of online objective tests and quizzes that learners can use to assess their own understanding of a topic of area of study."},
+				{"checked": "false", "item": "Ask learners to request the kind of feedback that they would like when they hand in their work."},
+				{"checked": "false", "item": "Structure opportunities of peers to assess and provide feedback on each other's work using set criteria."},
+				{"checked": "false", "item": "Use confidence-based marking (CBM). Learners must rate their confidence that their answer is correct. The higher the confidence the higher the penalty if the answer is wrong."},
+				{"checked": "false", "item": "Use an assessment cover sheet with questions to encourage reflection and self-assessment. Ask learners to make a judgement about whether the have met the stated criteria and estimate mark they expect."},
+				{"checked": "false", "item": "Directly involve learners in monitoring and reflecting on their own learning, through portfolios."},
+				{"checked": "false", "item": "Ask learners to write a reflective essay or keep a reflective journal in relation to their learning."},
+				{"checked": "false", "item": "Help learners to understand and record their own learning achievements through portfolios. Encourage learners to link these achievements to the knowledge, skills and attitudes required in future employment."},
+				{"checked": "false", "item": "Ask learners, in pairs, to produce multiple-choice tests over the duration of the module, with feedback for the correct and incorrect answers."}
+			
+			
+			]
+		},
+
+		{"category_id": "1", 
+		 "card_id": "4", 
+		 "title": "Give assessment choice",
+		 "info": "Give choice in the topic, method, criteria, weighting or timing of assessments.",
+		 "icon": "icon1.png",
+		 "background": "#8e366e",
+		 "checkitems": [
+				{"checked": "false", "item": "Give learners opportunities to select the topic for extended essays or project work, encouraging ownership and increasing motivation."},
+				{"checked": "false", "item": "Give learners choice in timing with regard to when they hand in assessments- managing learner and teacher workloads. Particularly appropriate where students have many assignments and the timings for submissions can be negotiated."},
+				{"checked": "false", "item": "Require learner groups to generate the criteria that could be used to asses their projects."},
+				{"checked": "false", "item": "Ask learners to add their own specific criteria to the general criteria provided by the teacher. Take these into account in the final assessment."},
+				{"checked": "false", "item": "Ask learners, in pairs to produce multiple-choice tests with feedback fro correct and incorrect answers, which reference the learning objectives. Let the rest of the class take these tests and evaluate them. These could be used in the final assessment."}
+			]
+		},
+	
+		{"category_id": "1", 
+		 "card_id": "5", 
+		 "title": "Encourage interaction and dialogue",
+		 "info": "Encourage interaction and dialogue around learning (peer and teacher-learner).",
+		 "icon": "icon1.png",
+		 "background": "#0b6f40",
+		  "checkitems": [
+				{"checked": "false", "item": "Review feedback in tutorials. Ask learners to read the written feedback comments on an assessment and discuss this with peers."},
+				{"checked": "false", "item": "Encourage learners to give each other feedback on an assessment in relation to published criteria before submission."},
+				{"checked": "false", "item": "Create natural peer dialogue by group projects. Structure tasks so that learners are encourage to discuss the criterai and standard expected beforehand, and return to discuss progress in relation to the criteria during the project."},
+				{"checked": "false", "item": "Use learner response systems to make lectures more interactive."},
+				{"checked": "false", "item": "Facilitate teacher-learner feedback in class trough the use of in class-feedback techniques."},
+				{"checked": "false", "item": "Ask learners to answer short queqtions on paper at the end of class. Use the results to provide feedback and stimulate discussion at the next class."},
+				{"checked": "false", "item": "Support the development of learning groups and learning communities."},
+				{"checked": "false", "item": "Construct groupwork to help learners to make connections."},
+				{"checked": "false", "item": "Ask learners to set tasks for each other."},
+				{"checked": "false", "item": "Encourage the information of peer study groups or create opportunities for learners from later years to support or mentor learners in earlier years."},
+				{"checked": "false", "item": "Link modules together as a pathway so that the same learners work in the same groups across a number of modules."},
+				{"checked": "false", "item": "Require learners in groups to generate the criteria used to assess their projects."},
+				{"checked": "false", "item": "Ask learners in pairs to produce multiple-choice tests, with feedback fro the correct and incorrect answers."}
+			]
+		},
+
+		{"category_id": "1", 
+		 "card_id": "6", 
+		 "title": "Provide opportunities to act on feedback",
+		 "info": "Provide opportunities to act on feedback.",
+		 "icon": "icon1.png",
+		 "background": "#b31f2c",
+		  "checkitems": [
+		    	{"checked": "false", "item": "Increase the number of opportunities for resubmission of assessments."},
+				{"checked": "false", "item": "Model the strategies that might be used to deal with difficulties with learners work in class."},
+				{"checked": "false", "item": "Avoid releasing the grade for an assessment or task until the learner has responsed to the feedback by commenting on it."},
+				{"checked": "false", "item": "Write down some action points alongside the normal feedback you proivde. This would identify for learners what they should do next time to improve their performance."},
+				{"checked": "false", "item": "Ask learners to find one or two examples of feedback comments that they found useful and explain how these might help them with future assessments."},
+				{"checked": "false", "item": "Use teaching time to involve learners in identifying action points for futurue assessments. Learners could formulate these action points after having read the feedback comments they have received."},
+				{"checked": "false", "item": "Provide online tasks where feedback is integrated into the task."},
+				{"checked": "false", "item": "Provide learners with model answers for assessment tasks and opportunities for them to make comparisons agains their own work."}
+			]
+		}
+		
+		,{"category_id": "1", 
+		 "card_id": "7", 
+		 "title": "Deliver high quality feedback",
+		 "info": "Deliver high quality feedback information that helps learners self-correct.",
+		 "icon": "icon1.png",
+		 "background": "#568caf",
+		  "checkitems": [
+		     	{"checked": "false", "item": "Provide opportunities for your learns to work through problem sets in tutorials, where feedback from you is availible. This ensures that the feedback is timely and received when learners get 'stuck'."},
+				{"checked": "false", "item": "Ensure feedback trunaround time is prompt, ideally within two weeks."},
+				{"checked": "false", "item": "Give plenty of documented feedback in advance of learners attempeting an assessment, e.g. a frequently occuring problem list."},
+				{"checked": "false", "item": "Give plenty of feedback to learners at the point at which they submit their work for assessment. This feedback might include a hanout uitlining suggestions in relation to known difficulties shown by previous learner cohorts supplemented by in-class explanations. Learners are most receptive for feedback when they have just worked trough their assessment."},
+				{"checked": "false", "item": "Ensure that feedback is provided to previously stated criteria, as this helps to link th efeedback to the expected learning outcomes."},
+				{"checked": "false", "item": "Limit the number of criteria for complex tasks; especially extended writing tasks where good performance is not just ticking off each criterion but is more about producing a holistic response."},
+				{"checked": "false", "item": "Instead of providing the correct answer, point learners to where they can find the correct answer."},
+				{"checked": "false", "item": "Ask learners to attach tree questions that they would like to know about a assessment or what aspect they would like to improve."},
+				{"checked": "false", "item": "Ask learners to self-assess their own work before submissions and provide feedback on this self-assessment as well on the assessment itself."}
+			]
+		}
+		
+		,{"category_id": "1", 
+		 "card_id": "8", 
+		 "title": "Encourage time and effort on task",
+		 "info": "Encourage time and effort on challenging learning tasks",
+		 "icon": "icon1.png",
+		 "background": "#2b487b",
+		  "checkitems": [
+		    	{"checked": "false", "item": "Provide clear definitions of academic requirements before each learning task."},
+				{"checked": "false", "item": "Provide explicit marking criteria and performance-level definitions."},
+				{"checked": "false", "item": "Provide opportunities for discussion and reflection about criteria and standards before learners engage in a learning task."},
+				{"checked": "false", "item": "Ask learning to reformulate in their own words the documented criteria before they begin the task. This could be submitted with the assessment."},
+				{"checked": "false", "item": "Model in class how you would think trough and solve exemplar problems."}
+			]
+		}
+		,{"category_id": "1", 
+		 "card_id": "9", 
+		 "title": "Clarify good performance",
+		 "info": "Help learners to interpret all the information they have exrtracted and produce a synthesis that presents their own perspective and findings.",
+		 "icon": "icon1.png",
+		 "background": "#6b2252",
+		  "checkitems": [
+		    	{"checked": "false", "item": "Provide clear definitions of academic requirements before each learning task."},
+				{"checked": "false", "item": "Provide explicit marking criteria and performance-level definitions."},
+				{"checked": "false", "item": "Provide opportunities for discussion and reflection about criteria and standards before learners engage in a learning task."},
+				{"checked": "false", "item": "Ask learning to reformulate in their own words the documented criteria before they begin the task. This could be submitted with the assessment."},
+				{"checked": "false", "item": "Model in class how you would think trough and solve exemplar problems."},
+				{"checked": "false", "item": "Explain to learners the rationale of assessment and feedback techniques."},
+				{"checked": "false", "item": "Before an assessment let learners examine selected examples of completed assessments identify which are superior."},
+				{"checked": "false", "item": "Organise a workshop where learners devise in collaboration with you, some of their own assessment criteria for a piece of work"},
+				{"checked": "false", "item": "Ask learners to add their own specific criteria to the general criteria provided by you."},
+				{"checked": "false", "item": "Work with your learners to develop an agreement, contact or charter where roles and responsiblities in assessment and learning are defined."}
+			]
+		}
+	]
+}

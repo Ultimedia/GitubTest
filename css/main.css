@@ -1,0 +1,774 @@
+/*
+ * Viewpoints
+ */
+/* master styles
+ --------------------------------------------- */
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+    min-width: 1100px;
+	background: #f1f2f2;
+}
+
+a:link, a:visited {
+    color: #4083a9;
+    outline: none;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #205f82;
+}
+
+textarea, input {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.8em;
+}
+
+.hide{
+	display: none;
+}
+
+/* page structure
+ --------------------------------------------- */
+#mainContent, #printPage {
+    position: relative;
+    padding-top: 62px;
+    font-size: 1em;
+}
+
+#printPage{
+	display: none;
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #fff;
+	padding: 82px 20px 20px 20px;
+}
+
+/* header
+ --------------------------------------------- */
+#header {
+    background: #eceff1;
+    text-align: center;
+    height: 62px;
+    font-size: 1em;
+    position: fixed;
+    min-width: 920px;
+    background: url("../images/headerBackground.png") repeat-x #F0F0F0;
+    z-index: 1;
+}
+
+#title {
+    float: left;
+    margin: 0 0 0 30px;
+}
+
+#nav {
+    margin: 0 auto;
+    height: 62px;
+    width: 650px;
+}
+
+#objective {
+    float: right;
+    margin: 0 30px 0 0;
+    resize: none;
+}
+
+#header textarea {
+    height: 42px;
+    margin: 8px 0 0 0;
+    border: 1px solid #BBBBBB;
+    max-width: 202px;
+    min-width: 202px;
+    max-height: 41px;
+    min-height: 41px;
+    resize: none;
+}
+
+/* navigation
+ --------------------------------------------- */
+#nav ul {
+    padding-top: 23px;
+}
+
+#nav li {
+    display: inline;
+    list-style-type: none;
+    padding: 8px 10px 8px 10px;
+    margin: 0 0 0 10px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0.08, rgb(177,185,191)), color-stop(1, rgb(243,245,246))); 
+	background: -moz-linear-gradient(center bottom, rgb(177,185,191) 8%, rgb(243,245,246) 100%); 
+	border: 1px solid #989fa3;
+   	color: #344251;
+}
+
+#nav li a{
+	color:#282f33;	
+	text-shadow: 1px 1px 0px #FFF;
+}
+
+
+#nav .selected{
+	color:#FFF;
+	background: -webkit-gradient(linear,left bottom,left top,color-stop(0.08, rgb(93,147,180)),color-stop(1, rgb(81,134,171)));
+	background: -moz-linear-gradient(center bottom,rgb(93,147,180) 8%,rgb(81,134,171) 100%);
+}
+
+#nav .selected a{
+	color: #fff;
+	text-shadow: 0px 0px 0px #FFF;
+}
+
+
+
+/* Main Content
+ --------------------------------------------- */
+ #leftSidebar{
+	position: fixed;
+ 	width: 32px;
+	background: #ececec;
+ }
+
+ #modules{
+ 	float: left;
+	margin-left: 32px;
+ }
+ 
+ #rightSidebar, #rightSidebarOpen{
+	position:fixed;
+ 	width: 32px;
+	background: #dbdbdb;
+	right:0;
+	z-index:1;
+ }
+ 
+ #rightSidebarOpen{
+ 	width: 315px;
+	display: inline;
+ }
+
+
+ /* Left sidebar
+ --------------------------------------------- */
+#addModule, #closeAnnotateModule{
+	display: block;
+	width: 32px;
+	height:42px;
+	background-color: #d3d3d3;
+	cursor: pointer;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	border-bottom: 1px solid #aca9ab;
+	line-height: 2em;
+}
+
+#closeAnnotateModule{
+	height:200px;
+	cursor: default;
+	display: none;
+}
+
+#closeAnnotateModule p{
+	padding: 70px 0 0 0;
+	-webkit-user-select: none
+	-moz-user-select: none
+}
+
+#leftSidebarCol{
+	float:left;
+	width: 32px;
+	background-color: #dbdbdb;
+	height: 100%;
+	border-left: 0px solid #BBBBBB;
+}
+
+#rightSidebarCol{
+	float: left;
+	width: 283px;
+	background-color: #c7c7c7;
+	height: 100%;
+	position: relative;
+}
+
+ /* Right sidebar
+ --------------------------------------------- */
+.openSidebarButton{
+	width: 32px;
+	height: 150px;
+	background: #a3a3a2;
+	display: block;
+	cursor: pointer;
+	margin-top: 250px;
+}
+
+#categorymenu{
+	background-color: #aeaeae;
+	border-bottom: 1px solid #979797;
+	padding: 2px;
+	text-align:center;
+}
+
+#categorymenu ul{
+	display:inline-block;
+	margin-top: 3px;
+}
+
+#categorymenu li{
+    background-color: #FDFDFD;
+    display: block;
+    float: left;
+    font-size: 13px;
+    padding: 10px 8px 10px 8px;
+	margin-right: 2px;
+}
+
+#sidebarContent{
+	width: 100%;
+	background: #c7c7c7;
+}
+
+.cardDrag{
+	height: 165px;
+	width: 235px;
+	display: block;
+	background: #FFF;
+	border: 1px dashed #aca9ab;
+	margin: 0 auto 10px
+}
+
+#sidebarWrapper{
+	padding: 10px 0 0px 0;
+}
+
+#sidebarNavigationWrapper{
+	height: 44px;
+	background: #9c9c9c;
+	width: 283px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	display: none;
+	text-align:center;
+	border-top: 1px solid #979797;
+}
+
+#sidebarNavigationWrapper ul li{
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin: 0 10px 0 10px;
+	float: left;
+	background: #e0e4e7;
+	-moz-border-radius: 5px;
+    border-radius: 5px;
+	cursor: pointer;
+}
+
+#sidebarNavigationWrapper ul{
+	display:inline-block;
+	margin-top:17px;
+}
+
+ /* Modules
+ --------------------------------------------- */
+.module{
+	height: 100%;
+	float:left;
+	min-width: 290px;
+	border-bottom: 1px solid #aca9ab;
+}
+
+.moduleTitle{
+	width: 100%;
+	height: 42px;
+	text-align: center;
+	background: #d2d3d3;
+	border: 1px solid #aca9ab;
+	border-top:none;
+	line-height: 2.5em;
+	text-align: center;
+	cursor: move;
+}
+
+.moduleIcon{
+	
+	background-color: #000;
+}
+
+.titleInput{
+	width: 90%;
+	border: 0;
+	font-size: 1.1em;
+	text-align: center;
+	
+	background: #d2d3d3 url('../images/moduleIcon.png');
+	background-repeat: no-repeat; 
+	background-position: top right;
+	padding: 2px;
+}
+
+.moduleAnnotations{
+	height: 35px;
+	width: 100%;
+	border: 1px solid #aca9ab;
+	border-top: 0px;
+	background: #f5f5f5;
+	text-align: center;
+}
+
+
+
+.moduleContent{
+	width: 100%;
+	background: #FFF;
+	border: 1px solid #aca9ab;
+	border-top: none;
+	border-bottom: none;
+}
+
+#module_container{
+	z-index: 0;
+	width: 100%;
+}
+
+.cardWrapper{
+	 margin:0 auto;
+	 width: 80%;
+	 padding: 20px;
+}
+
+.cardHolder{
+	height: 100%;
+	width: 100%;
+	display: block;
+	background: #FFF;
+	border: 1px dashed #aca9ab;
+	margin: 0 0 25px 0;
+
+}
+
+.cardHolder .card{	left:0 !important;
+	top:0 !important}
+
+#template{
+	
+	position: absolute;
+	right: 4000px;
+}
+
+
+ /* Modules
+ --------------------------------------------- */
+.card, .sortCard{
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0;
+	padding: 0;
+	cursor: pointer;
+}
+
+.sortCard{
+	opacity: 100;
+}
+
+.sortCard ul{
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.sortCard ul li{
+	display: inline-block;
+	color: #fff;
+	padding-bottom: 10px;
+	font-size: 0.9em;
+	margin: 0px 0px 10px 0px;
+}
+
+.sortCard input{
+	display: inline-block;
+	margin-right: 10px;
+	width: 30px;
+	float: left;
+}
+
+
+.sortCard p, .sortCard label{
+	width: 80%;
+	float: left;
+	line-height: 1.2em;
+	font-size: 0.9em;
+}
+
+.card h1, .sortCard h1{
+	color: #fff;
+	text-align: center;
+	font-size: 1.1em;
+	padding: 28% 5% 0 5%;
+	
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.sortCard h2{
+	text-align: center;
+	color: #FFF;
+	padding: 20px 0 20px 0;
+	font-size: 1.2em;
+	display: block;
+	width: 100%;
+	
+	background: rgba(255,255,255,0.1) url('../images/closeB.png');
+	background-repeat: no-repeat; 
+	background-position: top right;
+	margin: 0 0 20px 0;
+}
+
+.questionList label, .questionList p{
+	min-width: 375px;
+	cursor: pointer;
+}
+
+.questionList textarea{
+	padding: 5px;
+	width: 80%;
+	border: 1px dashed #FFF;
+	color: #FFF;
+	font-size: 1em;
+	background-color:rgba(255,255,255,0.1);
+	resize: none;
+	float: left;
+}
+
+.questionList button{
+	float: left;
+	margin-left: 5px;
+}
+
+.itemInput{
+	width: 90%;
+	border: 1px dashed #aca9ab;
+}
+
+#titleInput, #objectiveInput, .annotationsInput{
+	background: #fff url('../images/pen_icon.png');
+	background-repeat: no-repeat; 
+	background-position: top right;
+	padding: 2px;
+}
+
+.annotationsInput{
+	margin: 3px 0 0 0;
+	width: 91%;
+	min-width: 91%;
+	background: #f5f5f5; 
+	border: 1px dashed #aca9ab;
+	background: #f5f5f5 url('../images/pen_icon.png');
+	background-repeat: no-repeat; 
+	background-position: top right;
+	resize:none;
+	height: 27px;
+	padding: 0;
+}
+
+/**
+ * Modals
+ */ 
+#overlay {
+	position: absolute; 
+	left: 0px; 
+	top: 0px; 
+	width:100%; 
+	height:100%; 
+	text-align:center; 
+	z-index: 1000;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+#overlay #createModal, #overlay #finishModal{ 
+	width:515px; 
+	margin: 0px auto; 
+	background-color: #fff; 
+	padding:0px; 
+	text-align:center; 
+	opacity: 1;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+#overlay #finishModal{
+	display: none;
+}
+
+#exportModule{
+	width: 90%;
+	border: solid 1px #c0c0c0;
+	height: 200px;
+	margin: 20px 0px 20px 25px;
+}
+
+#exportModule p{
+	font-size: 0.7em;
+	margin: 80px 0 0 0;
+	font-weight: normal;
+}
+
+#overlay #createModal h1, #overlay #finishModal{
+	font-size: 1.4em;
+	font-weight: bold;
+	margin-bottom: 20px;
+	padding-top: 20px;
+}
+
+#createModal #loadBox{
+	background-color: #fffbd5;
+	border-top: #d3d3d3 solid 1px;
+	border-bottom: #d3d3d3 solid 1px;
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.leftLoad{
+	width: 320px;
+	float:left;
+}
+
+.rightLoad{
+	float:left;
+	width: 190px;
+	margin: 17px 0 15px 0;
+	
+}
+
+select{
+	width: 100px;
+	margin-top: 8px;
+	display: inline-block;
+	padding:6px 0 0 8px;
+}
+
+.leftLoad p{
+	padding: 20px 5px 20px 30px;
+	font-size: 0.9em;
+}
+
+#loadBox p{
+	text-align: left;
+}
+
+#createModal ul li{
+	padding: 5px 0px 5px 0;
+}
+
+#createModal label{
+	float: left;
+	text-align:left;
+	width: 100px;
+	margin-left: 30px;
+	padding: 5px 0px 5px 0;
+}
+
+#createModal input, #objectiveFormInput{
+	width: 60%;
+	border: solid 1px #c0c0c0;
+	padding: 5px 2px 5px 2px;
+	resize:none;
+	background: #fff;
+}
+
+#loadBox{
+	width: 100px;
+	display: none;
+}
+
+#createForm button{
+	padding: 10px;
+}
+
+#createForm .modalButtons{
+	width: 315px;
+	display: block;
+	margin-left: 167px;
+	margin-bottom: 20px;
+	text-align: right;
+}
+
+#cancelButton{
+	display: none;
+}
+
+
+#loadList{
+	margin:0;
+	padding:0;
+}
+
+#loadButton{
+	float: right;
+	margin: 0 30px 0 0px;
+}
+
+#closeModalButton{
+	float:right; 
+	margin-right: -13px;
+	margin-top: -13px;
+	cursor: pointer;
+	display:none;
+}
+
+
+/* Print page
+ --------------------------------------------- */
+#printPageHeader h1{
+	font-size: 2em;
+	font-weight: bold;
+	padding: 0px 0 20px 0;
+}
+
+#printButton, #saveButton{
+	padding: 10px;
+}
+
+#saveButton{
+	display: inline-block;
+}
+
+#printPageHeader #leftheader{
+	width: 70%;
+	float: left;
+	display: inline-block;
+}
+
+#trashIcon{
+	display: inline-block;
+	float: left;
+	padding-top: 15px;
+	padding-left: 20px;
+}
+
+.savedTitle{
+	float: left;
+	padding-top: 12px;
+	padding-bottom: 5px;
+}
+
+#leftNavButton, #rightNavButton{
+	padding: 5px;
+	margin: 11px 15px 0;
+	cursor: pointer;
+}
+
+#leftNavButton{
+	float:left;
+	opacity: 0.5;
+}
+
+#rightNavButton{
+	float:right;
+}
+
+#printPageHeader #rightHeader{
+	text-align: right;
+	width: 30%;
+	float: left;
+}
+
+#printPageInfo li{
+	padding: 5px 0 5px 0;
+}
+
+#printPage textarea{
+	width: 98%;
+	border: solid 1px #c0c0c0;
+	resize: none;
+	height: 100px;
+	padding: 4px;
+}
+
+#printPage printPageHeader{
+	background-color: #3F3F3F;
+}
+
+spacer{
+	padding: 20px;
+}
+
+hr{
+	clear: both;
+	height: 1px;
+	background: #c0c0c0;
+	border: 0;
+	margin: 20px 0 20px 0;
+}
+
+#startButton{
+	margin-left: 5px;
+}
+
+.printPreview{
+	margin: 10px 0 20px 0;
+	background: #e7eaef;
+}
+
+.printContent{
+	padding: 20px;
+}
+
+.printPreview h2{
+	font-size: 1.3em;
+	padding: 0 0 10px 0;
+}
+
+.printPreview h3{
+	font-size: 1em;
+	padding: 10px 0 10px 0;
+}
+
+.printPreview h4{
+	margin-bottom:5px;
+	padding: 0;
+}
+
+.printPreview ol{
+	font-size: 0.8em;
+  	color: #000000;
+	list-style-type: decimal;
+	margin: 5px 0 0 30px;
+}
+
+#printList{
+	margin-top: 25px;
+}
+
+.printPreview ol li{
+	font-size: 1.1em;
+	padding: 8px 0 5px 0;
+	font-weight: bold;
+}
+
+.printPreview ul li{
+	font-size: 0.9em;
+	line-height: 16px;
+	font-weight: normal;
+	background: url(../images/wink.png) left top no-repeat;
+	padding: 0px 20px 0 18px;
+	margin: 15px 0 15px;
+}
+
+.printPreview ul{
+	margin: 10px 10px 10px 0px;
+}
+
+.savedTitle{
+	font-size: 12px;
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1" />
+        <link rel="stylesheet" href="css/reset.css" type="text/css"/>
+        <link rel="stylesheet" href="css/main.css" type="text/css"/>
+		<link rel="stylesheet" href="css/print.css" type="text/css"  media="print"/>
+        <script type="text/javascript" src="js/jquery-1.5.2.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.11.custom.min.js"></script>
+		<script type="text/javascript" src="js/jquery.flip.min.js"></script>
+		<script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
+		<script type="text/javascript" src="js/jquery.valign.js"></script>
+		<script type="text/javascript" src="js/jquery.simpletip-1.3.1.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <title>Viewpoints</title>
+    </head>
+    <body>
+    	<div id="overlay">
+			<div id="createModal">
+				<img id="closeModalButton" src="images/closeBig.png" alt=""/>		
+				<h1>Create a New Arrangement</h1>
+				
+				<div id="loadBox">	
+					<div class="leftLoad">
+						<p>Hey! I found some previous arrangements.</p>
+					</div>
+					<div class="rightLoad">
+						<select id="loadList"></select>
+						<button id="loadButton" type="button">Load</button>
+					</div>
+				</div>
+				
+				<div id="createForm">
+					<ul>
+						<li><label>Title</label>  <input id="titleFormInput" type="text" value="Untitled Arrangement"/></li>
+						<li><label>Objective</label> <textarea name="Objective" rows="7" cols="20" id="objectiveFormInput">No Objective</textarea></li>
+						<li><label>&nbsp;</label><span class="modalButtons"><button id="cancelButton" type="button">Cancel</button><button id="startButton" type="button">Start</button></span></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div id="finishModal">
+		
+				<h1>Export Your Arrangement</h1>
+				<div id="exportModule">
+					<p>This box will contain a structured overview of your arrangement. You can save and e-mail it.</p>
+				</div>
+			</div>
+		</div>
+		
+        <div id="wrapper">
+        <div id="header">
+            <div id="title">
+                <textarea name="Title" rows="2" cols="20" id="titleInput">Untitled Arrangement</textarea>
+            </div>
+            <div id="objective">
+                <textarea name="Title" rows="2" cols="20" id="objectiveInput">No Objective</textarea>
+            </div>
+            <div id="nav">
+                <ul>
+                    <li id="setupButton" class="selected">
+                        <a href="#">Setup</a>
+                    </li>
+                    <li id="arrangeButton"> <a href="#">Arrange</a></li>
+                    <li id="finishButton">
+                        <a  href="#">Finish</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="mainContent">
+            <div id="leftSidebar">
+                <div id="addModule">
+                    <p>+</p>
+                </div>
+				
+				<div id="closeAnnotateModule">
+					<p>-</p>
+				</div>
+				
+				<div class="card" did="0">
+					<h1>Title of the card</h1>
+				</div>
+            </div>
+            <div id="modules">
+                <div class="module" id="template">
+                    <div class="moduleTitle">
+                        <input type="text" class="titleInput" value="Untitled Module"/>
+                    </div>
+                    <div class="moduleAnnotations">
+                        <textarea name="Annotations" rows="1" cols="20" class="annotationsInput">Enter annotations...</textarea>
+                    </div>
+                    <div class="moduleContent">
+                        <div class="cardWrapper">
+                            <div class="cardHolder">
+			
+                            </div>
+                            <div class="cardHolder">
+                              
+                            </div>
+                            <div class="cardHolder">
+                            
+                            </div>
+							 <div class="cardHolder">
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id='module_container'>
+                   
+                </div>
+            </div>
+            <div id="rightSidebar">
+                <div class="openSidebarButton">&nbsp;</div>
+            </div>
+			
+			<div id="rightSidebarOpen">
+				<div id="leftSidebarCol">
+					<div class="openSidebarButton">&nbsp;</div>
+				</div>
+				<div id="rightSidebarCol">
+					<div id="categorymenu">
+						<ul>
+							<li class="catButton">Assessment and Feedback</li>
+						</ul>
+					</div>
+					
+					<div id="sidebarContent">
+						 <div id="sidebarWrapper">
+                            <div class="cardDrag">
+                              
+                            </div>  
+                        </div>
+					</div>
+					
+					<div id="sidebarNavigationWrapper">
+						<img src="images/leftA.png" alt="" id="leftNavButton"/>
+						<ul id="sidebarNavList">
+							<li class="sidebarNavButton">&nbsp;</li>
+						</ul>
+						<img src="images/rightA.png" alt="" id="rightNavButton"/>
+					</div>
+				</div>
+            	</div>
+			</div>
+			
+			<div id="printPage">
+				
+				<div id="printPageHeader">
+					<div id="leftheader">
+						<h1>The Title</h1>
+					</div>
+					
+					<div id="rightHeader">
+						<button id="saveButton" type="button">Save</button>
+						<button id="printButton" type="button">Print</button>
+					</div>
+				</div>
+				
+				<hr/>
+				
+				<div id="printPageInfo">
+					<ul>
+						<li>
+							<label>Objective</label>
+						</li>
+						<li>
+							<textarea id="objectivePrintArea" rows="7" cols="20">Your Objective</textarea>
+						</li>
+						<li class="spacer"></li>
+						<li>
+							<label>Global annotations</label>
+						</li>
+						<li>
+							<textarea id="annotationPrintArea" rows="7" cols="20">Enter some global annotations</textarea>
+						</li>
+					</ul>
+				</div>
+				
+				<hr/>
+				
+				<div id="printList">
+					<label>Arrangement</label>
+				</div>
+			</div>
+        </div>
+    </body>
+</html>
